@@ -4,8 +4,9 @@
 Grapevine diseases and pests pose significant challenges to agricultural productivity, particularly in organic farming, which relies heavily on early detec- tion. Traditional methods of disease detection depends on manual inspection, which is labor-intensive and prone to errors. This project leverages advancements in edge AI and IoT technologies to develop a real-time system for the classification of the health status of grapevine leaf. The Nicla Vision was utilized as edge device to perform on-device inference using a quantized TensorFlow Lite model, achieving an accuracy of 93%. Blob detection was implemented to pre-process input images, ensuring efficient region identification and classification. The system transmits classification results, which include labels, prob- abilities and respective images, via an MQTT broker to a centralized data management pipeline, comprising Node- RED, InfluxDB and Grafana. This framework enables efficient data storage and visualization, making it highly adaptable for vineyard monitoring.
 
 Below a figure with the complete pipeline of the system: 
-![alt text](https://github.com/PietroFerrario/iot-leaf-disease-detection/blob/main/Figures/Diagramma.png)
-
+<div align="center">
+  <img src="https://github.com/PietroFerrario/iot-leaf-disease-detection/blob/main/Figures/Diagramma.png", width="600">
+</div>
 
 ## File structure
 - Nicla Vision 
