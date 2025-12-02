@@ -8,8 +8,7 @@ Below a figure with the complete pipeline of the system:
 
 
 ## File structure
-
--Nicla Vision 
+- Nicla Vision 
     - `Code_nicla/`: PC-side scripts to run with the NiclaVision board connected. Run: main.py
     - `nicla_deploy/`: Code deployed on the Nicla Vision 
 
