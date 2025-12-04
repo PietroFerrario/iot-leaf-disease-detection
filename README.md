@@ -8,6 +8,18 @@ Below a figure with the complete pipeline of the system:
   <img src="https://github.com/PietroFerrario/iot-leaf-disease-detection/blob/main/Figures/Diagramma.png", width="600">
 </div>
 
+## Dataset
+
+This project uses the **Grapevine Leaf Disease Dataset** published on Kaggle by *M. Rahman et al.*  
+It contains high-resolution images of healthy and diseased grapevine leaves across several categories.
+
+- **Source:**: https://www.kaggle.com/datasets/rm1000/grape-disease-dataset-original
+- **Classes:** For this project, the dataset was adapted for binary classification (Healthy vs Sick).
+- **Dataset Sample**: 
+<div align="center">
+  <img src="https://github.com/PietroFerrario/iot-leaf-disease-detection/blob/main/Figures/leaves.jpg", width="450">
+</div>
+   
 ## File structure
 - Nicla Vision 
     - `Code_nicla/`: PC-side scripts to run with the NiclaVision board connected. Run: main.py
