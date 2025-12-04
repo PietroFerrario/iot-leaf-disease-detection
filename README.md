@@ -19,8 +19,35 @@ It contains high-resolution images of healthy and diseased grapevine leaves acro
 <div align="center">
   <img src="https://github.com/PietroFerrario/iot-leaf-disease-detection/blob/main/Figures/leaves.jpg", width="450">
 </div>
+
+## Features
+
+- Real-time grapevine leaf classification (Healthy vs Sick)
+- On-device inference on Nicla Vision using quantized TFLite
+- Blob detection for region pre-processing
+- Wi-Fi AP mode communication (device acts as hotspot)
+- Socket-based data transmission from Nicla → Laptop
+- Similarity filtering using SSIM to avoid redundant images
+- MQTT publishing with JSON payloads
+- Node-RED dashboard for real-time monitoring
+- InfluxDB time-series storage
+- Grafana visualization for historical and real-time data
+
+## Demo
+
+Detected leaf on the Nicla Vision (left) and the Node-RED dashboard for real-time monitoring (right).
+
+<div align="center">
+
+  <img src="https://github.com/PietroFerrario/iot-leaf-disease-detection/blob/main/Figures/nicla_nic.png" 
+       width="310" alt="Detected Leaf" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/PietroFerrario/iot-leaf-disease-detection/blob/main/Figures/node-red.png" 
+       width="470" alt="Node-RED Dashboard" />
+
+</div>
    
-## File structure
+## Repository Structure
 - Nicla Vision 
     - `Code_nicla/`: PC-side scripts to run with the NiclaVision board connected. Run: main.py
     - `nicla_deploy/`: Code deployed on the Nicla Vision 
